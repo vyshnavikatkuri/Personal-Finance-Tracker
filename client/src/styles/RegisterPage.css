@@ -1,0 +1,52 @@
+.register-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('../../public/expense-tracker-img.webp');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin: 0;
+                color:white;
+}
+.register-form {
+  color:white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  width: 30%;
+  
+}
+
+.register-form h2 {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #b87333;
+}
+
+.register-form a {
+  color: #b87333 !important;
+}
+
+.register-form a:hover {
+  color: white !important;
+}
+
+.register-form button {
+  background-color: #b87333;
+  color: white;
+}
+
+.register-form input:focus {
+  border: 1px solid #b87333 !important;
+  color: #b87333;
+}
+.register-form button:hover {
+  background-color: black;
+  color: white;
+}
+.register-form label{
+  color:white;
+}

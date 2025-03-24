@@ -1,0 +1,24 @@
+/* Make the entire page fill the viewport */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensures the body stretches to the full height */
+}
+
+.layout {
+  display: flex;
+  flex-direction: column; /* Stacks children vertically */
+  min-height: 100vh; /* Make the layout span the full height of the viewport */
+}
+
+.content {
+  flex: 1; /* Makes the content take up the remaining space */
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
