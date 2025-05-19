@@ -1,4 +1,3 @@
-
 const mongoose = require("mongoose");
 const colors = require("colors");
 const connectDb = async () => {
@@ -9,5 +8,4 @@ const connectDb = async () => {
     console.log(`${error}`.bgRed);
   }
 };
-
 module.exports = connectDb;
