@@ -4,6 +4,8 @@ const morgan = require("morgan");
 const dotenv = require("dotenv");
 const colors = require("colors");
 const path = require("path");
+
+
 const connectDb = require("./config/connectDb");
 // config dot env file
 dotenv.config();
@@ -13,6 +15,7 @@ connectDb();
 
 //rest object
 const app = express();
+app.use(express.json());
 
 //middlewares
 app.use(morgan("dev"));
@@ -24,6 +27,12 @@ app.use(cors());
 app.use("/api/v1/users", require("./routes/userRoute"));
 //transections routes
 app.use("/api/v1/transections", require("./routes/transectionRoutes"));
+const budgetRoutes = require('./routes/budgetRoutes');
+app.use('/api/v1/budgets', budgetRoutes);
+const notificationRoutes = require('./routes/notificationRoutes');
+app.use('/api/v1/notifications',notificationRoutes);
+
+
 //static files
 app.use(express.static(path.join(__dirname, './client/build')));
 

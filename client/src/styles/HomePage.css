@@ -34,6 +34,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9491E2", en
     background-size: cover; /* Ensures the image covers the entire area */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-position: center; 
+     background-attachment: fixed;
     
  }
  .switch-icons .active-icon{
